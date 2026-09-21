@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #101c2e;
+  --color-card: #ffffff;
+  --color-card-foreground: #101c2e;
+  --color-primary: #f97316;
+  --color-primary-foreground: #ffffff;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #475569;
+  --color-border: #e2e8f0;
+  --color-navy: #0b1523;
+  --color-navy-foreground: #f1f5f9;
+  --color-navy-muted: #1e293b;
+  --color-navy-border: #334155;
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 215 50% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 50% 14%;
+  --primary: 22 92% 52%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 30% 96%;
+  --secondary-foreground: 215 50% 14%;
+  --muted: 210 20% 96%;
+  --muted-foreground: 215 16% 45%;
+  --accent: 22 92% 52%;
+  --accent-foreground: 0 0% 100%;
+  --border: 215 25% 88%;
+  --input: 215 25% 90%;
+  --ring: 22 92% 52%;
+  --navy: 215 60% 11%;
+  --navy-foreground: 210 30% 96%;
+  --navy-muted: 215 35% 22%;
+  --navy-border: 215 30% 24%;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 320px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-heading {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+.bg-navy {
+  background-color: hsl(var(--navy));
+}
+
+.bg-navy\/95 {
+  background-color: hsla(215, 60%, 11%, 0.95);
+}
+
+.text-navy {
+  color: hsl(var(--navy));
+}
+
+.text-navy-foreground {
+  color: hsl(var(--navy-foreground));
+}
+
+.text-navy-foreground\/85 {
+  color: hsla(210, 30%, 96%, 0.85);
+}
+
+.text-navy-foreground\/80 {
+  color: hsla(210, 30%, 96%, 0.8);
+}
+
+.text-navy-foreground\/75 {
+  color: hsla(210, 30%, 96%, 0.75);
+}
+
+.text-navy-foreground\/70 {
+  color: hsla(210, 30%, 96%, 0.7);
+}
+
+.text-navy-foreground\/60 {
+  color: hsla(210, 30%, 96%, 0.6);
+}
+
+.border-navy-border {
+  border-color: hsl(var(--navy-border));
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0.875rem;
+  min-height: 44px;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(var(--navy-border));
+  background-color: hsla(215, 35%, 22%, 0.45);
+  color: hsl(var(--navy-foreground));
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.btn-cta:hover {
+  border-color: hsl(var(--primary));
+  color: hsl(var(--primary));
+  background-color: hsla(215, 35%, 22%, 0.75);
+}
+
+.ic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(var(--navy-border));
+  color: hsl(var(--navy-foreground));
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ic:hover {
+  border-color: hsl(var(--primary));
+  color: hsl(var(--primary));
+  background-color: hsla(215, 35%, 22%, 0.6);
+  transform: translateY(-2px);
+}
+
