@@ -46,15 +46,6 @@ export default function Footer() {
                 <span>{contact.email}</span>
               </a>
             </li>
-            <li>
-              <a
-                href={`tel:${contact.phoneRaw}`}
-                className="inline-flex items-center gap-2 hover:text-[hsl(var(--primary))] transition-colors"
-              >
-                <Phone size={15} />
-                <span>{contact.phone}</span>
-              </a>
-            </li>
           </ul>
         </div>
 
