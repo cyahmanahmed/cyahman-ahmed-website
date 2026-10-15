@@ -210,7 +210,8 @@ export default function Contact() {
 
               <a
                 id="btn-direct-phone"
-                href={`tel:${contact.phoneRaw}`}
+                href="#"
+                onClick={(e) => e.preventDefault()}
                 className="btn-cta w-full"
               >
                 <Phone size={16} />
