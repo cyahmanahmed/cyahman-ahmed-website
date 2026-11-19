@@ -170,8 +170,8 @@ export const portfolioData: PortfolioData = {
   ],
   contact: {
     email: "cyahmanahmed@gmail.com",
-    phone: "+27 81 789 1742",
-    phoneRaw: "+27817891742",
+    phone: "+27",
+    phoneRaw: "+27",
     intro: "Whether you are looking for a Junior Software Developer to join your team or need assistance with a website, software solution, database, business system, or technical issue, I would be happy to hear from you.",
     linkedin: "https://www.linkedin.com/in/cyahman-ahmed",
     github: "https://github.com/cyahmanahmed",
